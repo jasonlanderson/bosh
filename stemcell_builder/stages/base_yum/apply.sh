@@ -20,8 +20,10 @@ zip unzip \
 nfs-common flex psmisc apparmor-utils iptables sysstat \
 rsync openssh-server traceroute libncurses5-dev quota \
 libaio1 gdb libcap2-bin libcap-devel bzip2-devel \
-libyaml-devel cmake sudo nc rsyslog-relp"
+libyaml-devel cmake sudo nc uuid-devel libgcrypt-devel rst2man gnutls-devel"
 pkg_mgr install $packages
+
+pkg_mgr remove rsyslog
 
 # Lifted from bosh_debs
 #pkg_mgr install "scsitools mg htop module-assistant debhelper"
